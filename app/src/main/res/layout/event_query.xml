@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/query_event_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/query_event_name"
+                android:hint="@string/action_refresh"
+                android:textSize="17sp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:textColor="#404040"
+                android:layout_height="40dp" />
+            <!--
+            <TextView
+                android:id="@+id/query_event_type"
+                android:hint="@string/accept"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+                -->
+            <TextView
+                android:id="@+id/query_event_time"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/action_settings"
+                android:textColor="#6E9DE3"
+                android:textSize="17sp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/query_event_count"
+                android:hint="@string/action_refresh"
+                android:layout_marginLeft="8dp"
+                android:textColor="#404040"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/event_query_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/event_edit"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/action_sign_in"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/event_query_delete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/event_delete"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/action_register"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+</LinearLayout>

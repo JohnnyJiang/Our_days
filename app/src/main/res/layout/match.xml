@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/match_partner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="20"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/anniversary"
+        android:drawablePadding="12dip"
+        android:hint="@string/match_partner"
+        android:inputType="phone"
+        android:textColor="#f5000000" />
+
+    <Button
+        android:id="@+id/couple_match"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/match_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/action_sign_in"/>
+
+</LinearLayout>

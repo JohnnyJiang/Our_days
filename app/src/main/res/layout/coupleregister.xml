@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/anniversary_title"
+        android:background="#46B79A"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+-->
+    <EditText
+        android:id="@+id/anniversary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="20"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/anniversary"
+        android:drawablePadding="12dip"
+        android:hint="@string/anniversary"
+        android:textColor="#f5000000"
+        android:focusable="false"/>
+
+    <Button
+        android:id="@+id/couple_reg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/finish"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/action_sign_in"/>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    tools:context=".UserLoginActivity"
+    >
+<!--
+    <TextView
+        android:id="@+id/CoupleChat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#46B79A"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="@string/login_title" />
+-->
+    <EditText
+        android:id="@+id/login_user_id"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="12dip"
+        android:inputType="phone"
+        android:hint="@string/edit_message" />
+
+
+    <EditText
+        android:id="@+id/login_user_pw"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_pw"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="12dip"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/LogInButton"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/action_sign_in"
+        android:text="@string/button_login"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textColorHint="#f3f2f2" />
+    <Button
+        android:id="@+id/RegisterButton"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/action_register"
+        android:text="@string/button_register"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textColorHint="#f3f2f2" />
+    <!--
+    <Button
+        android:id="@+id/LogInButton"
+        android:layout_marginTop="10dp"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_marginTop="10dp"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:background="@drawable/register"
+        android:textSize="20sp" />
+-->
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hk.edu.cuhk.ie.iems5722.group4_our_days">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="hk.edu.cuhk.ie.iems5722.a1_1155073647.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cuhk"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.chat_activity"
+            android:parentActivityName="hk.edu.cuhk.ie.iems5722.group4_our_days.MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.login_register.UserLoginActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.login_register.CoupleRegisterActivity"/>
+
+        <activity android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.login_register.UserRegisterActivity"
+           >
+        </activity>
+
+        <activity android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.event.eventquery_activity"
+            android:parentActivityName="hk.edu.cuhk.ie.iems5722.group4_our_days.MainActivity">
+        </activity>
+        <activity android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.event.event_edit_activity"
+            android:parentActivityName="hk.edu.cuhk.ie.iems5722.group4_our_days.event.eventquery_activity">
+        </activity>
+        <activity android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.event.event_add_activity"
+            android:parentActivityName="hk.edu.cuhk.ie.iems5722.group4_our_days.MainActivity">
+        </activity>
+        <activity android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.login_register.match_activity"/>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="hk.edu.cuhk.ie.iems5722.a1_1155073647" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="hk.edu.cuhk.ie.iems5722.group4_our_days.RegistrationIntentService"
+            android:exported="false">
+        </service>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+</manifest>

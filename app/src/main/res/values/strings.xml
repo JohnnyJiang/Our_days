@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Our Days</string>
+    <string name="action_settings">Settings</string>
+    <string name="chat_room1">Chatroom 1</string>
+    <string name="chat_room2">Chatroom 2</string>
+    <string name="chat_room3">Chatroom 3</string>
+    <string name="course_code">IEMS5722</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_logout">Logout</string>
+
+    <!--  activity_login -->
+    <string name="login_title">COUPLE CHAT</string>
+    <string name="edit_message">Your Telephone</string>
+    <string name="edit_pw">Password</string>
+    <string name="button_register">No Account?</string>
+    <string name="button_login">Enter</string>
+
+    <!--  activity_main -->
+    <string name="username1">My Name</string>
+    <string name="userlocation">Location</string>
+    <string name="userweather">Weather</string>
+    <string name="username2">Partner Name</string>
+
+    <!--  activity_register_1 -->
+    <string name="registerpage">User Register Page</string>
+    <string name="register">Register</string>
+    <string name="user_idTV">User ID</string>
+    <string name="usernameTV">User NAME</string>
+    <string name="passwordTV">Password</string>
+    <string name="password_againTV">Again</string>
+    <string name="genderTV">Gender</string>
+    <string name="birthdayTV">Birthday</string>
+    <string name="user_id">Enter your Phone Number</string>
+    <string name="username">Enter your username</string>
+    <string name="password">Password</string>
+    <string name="password_again">Password again</string>
+    <string name="gender">Gender</string>
+    <string name="female">famale</string>
+    <string name="male">male</string>
+    <string name="birthday">Please choose birthday</string>
+    <string name="next">Next</string>
+    <string name="register2">Please fill in your parner\'s email account</string>
+    <string name="register_hint">Your parner\'s initial password will be the same as yours.</string>
+
+    <!--  activity_register_2 -->
+    <string name="reg_2_hint">Register for Partner</string>
+    <string name="user_id_2">Enter your partner\'s email</string>
+    <string name="username_2">Enter your partner\'s username</string>
+    <string name="password_2">Password</string>
+    <string name="password_again_2">Password again</string>
+    <string name="gender_2">Your Partner\'s Gender</string>
+    <string name="birthday_2">Choose Your Partner\'s birthday</string>
+    <string name="match_partner">Enter your partner\'s telephone</string>
+    <string name="match_button">Match</string>
+
+    <string name="anniversary_title">Final Step</string>
+    <string name="anniversary">Set your anniversary</string>
+
+    <!--  activity_cpmain -->
+    <string name="calender_title">Calender</string>
+    <string name="calender_date">2016 04 28</string>
+    <string name="add_event">Add new event</string>
+    <string name="chat_button">Chat</string>
+    <string name="finish">FINISH</string>
+    <string name="countdays">13 LEFT</string>
+
+    <!--  activity_event_query -->
+    <string name="event_delete">DELETE</string>
+    <string name="event_edit">EDIT</string>
+
+    <!--  activity_event_edit-->
+    <string name="event_edit_title">Event Edit</string>
+    <string name="event_type_editTV">Type</string>
+    <string name="event_time_editTV">Time</string>
+    <string name="event_type_nameTV">Content</string>
+    <string name="event_type_edit">Choose a type</string>
+    <string name="event_time_edit">Choose the time</string>
+    <string name="event_name_editTV">Title</string>
+    <string name="ok">DONE</string>
+
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+</resources>

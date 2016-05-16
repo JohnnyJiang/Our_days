@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--
+    <ImageView
+        android:id="@+id/event_icon"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="start"
+        android:layout_marginLeft="3dp"
+        />
+-->
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="0.8"
+        android:drawableLeft="@drawable/date"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:drawablePadding="12dip"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="#404040"
+        />
+<!--
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+         -->
+    <TextView
+        android:id="@+id/event_countdays"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="0.2"
+        android:textSize="15sp"
+        android:text="@string/countdays"
+        />
+
+
+</LinearLayout>
